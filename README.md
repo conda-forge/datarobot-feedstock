@@ -20,10 +20,10 @@ All platforms:
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-datarobot-green.svg)](https://anaconda.org/conda-forge/datarobot)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/datarobot.svg)](https://anaconda.org/conda-forge/datarobot)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/datarobot.svg)](https://anaconda.org/conda-forge/datarobot)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/datarobot.svg)](https://anaconda.org/conda-forge/datarobot)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-datarobot-green.svg)](https://anaconda.org/conda-forge/datarobot) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/datarobot.svg)](https://anaconda.org/conda-forge/datarobot) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/datarobot.svg)](https://anaconda.org/conda-forge/datarobot) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/datarobot.svg)](https://anaconda.org/conda-forge/datarobot) |
 
 Installing datarobot
 ====================
