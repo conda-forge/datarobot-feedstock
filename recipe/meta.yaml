@@ -1,6 +1,6 @@
 {% set name = "datarobot" %}
-{% set version = "2.12.0" %}
-{% set sha256 = "752f9af790b3e5d0f6ea2212dc3182cbcb57965943254606fa9d171d220cdf0b" %}
+{% set version = "2.13.0" %}
+{% set sha256 = "59852ecbab4ca607e28bf92f091dc1c21d129ec439ab4c1f3e33cc3d4281603b" %}
 
 package:
   name: {{ name|lower }}
