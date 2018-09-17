@@ -26,7 +26,7 @@ requirements:
     - pandas >=0.15
     - pyyaml >=3.11
     - requests-toolbelt >=0.6
-    - trafaret <1.1,>=0.7
+    - trafaret <2.0,>=0.7,!=1.1.0
 
 test:
   imports:
