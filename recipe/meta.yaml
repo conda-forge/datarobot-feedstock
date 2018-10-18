@@ -45,8 +45,9 @@ about:
 
 extra:
   recipe-maintainers:
-    - elatt
+    - daveblumstein
     - dsakagi
-    - peterhurford
+    - elatt
     - madmott
     - nott
+    - peterhurford
