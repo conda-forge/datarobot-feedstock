@@ -1,6 +1,6 @@
 {% set name = "datarobot" %}
-{% set version = "2.16.0" %}
-{% set sha256 = "acfbb58f82275d9be39dcf443e16fbc20fd8727759fa5c03570c35e6e4430214" %}
+{% set version = "2.18.0" %}
+{% set sha256 = "d294b77b0ce90c5e63a28e1f12993fcc5eb868f9f3ad62658441c06eac450e7f" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
