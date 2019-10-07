@@ -1,4 +1,4 @@
-About datarobot
+About DataRobot
 ===============
 
 Home: https://www.datarobot.com/
