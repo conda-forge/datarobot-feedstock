@@ -1,6 +1,6 @@
 {% set name = "datarobot" %}
-{% set version = "2.17.0" %}
-{% set sha256 = "00a44c7c6179e65465e91e5ff1891afef89cd5edcf9885be605dc38447467843" %}
+{% set version = "2.18.0" %}
+{% set sha256 = "d294b77b0ce90c5e63a28e1f12993fcc5eb868f9f3ad62658441c06eac450e7f" %}
 
 package:
   name: {{ name|lower }}
@@ -25,8 +25,10 @@ requirements:
     - python
     - pandas >=0.15
     - pyyaml >=3.11
+    - requests >=2.21
     - requests-toolbelt >=0.6
     - trafaret <2.0,>=0.7,!=1.1.0
+    - urllib3 >=1.24
 
 test:
   imports:
