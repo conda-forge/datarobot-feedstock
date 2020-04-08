@@ -1,6 +1,6 @@
 {% set name = "datarobot" %}
-{% set version = "2.19.0" %}
-{% set sha256 = "38b0032555ec930e0b8e0ab79b7aef2619a5d60b48b68ed373d000920eebb313" %}
+{% set version = "2.20.0" %}
+{% set sha256 = "d7d8b20e6b51b39f2f5313ec35d2c21fd81eb1502fe5a2f7e053057a268fae64" %}
 
 package:
   name: {{ name|lower }}
@@ -39,7 +39,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: 'This client library is designed to support the DataRobot API.'
+  summary: This client library is designed to support the DataRobot API.
 
   description: |
     datarobot is a client library for working with the <https://www.datarobot.com/> platform API.
