@@ -1,5 +1,5 @@
 {% set name = "datarobot" %}
-{% set version = "2.20.2" %}
+{% set version = "2.21.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 04302dd08250e965d60a80ba24c4b34549dd4859164e5061f6a4500b9639b7e2
+  sha256: 51f2e070ec3ceb6e11d76f138fd6843508eb178a0a34d2562aa2393a146e5d0a
 
 build:
   noarch: python
@@ -39,7 +39,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: 'This client library is designed to support the DataRobot API.'
+  summary: This client library is designed to support the DataRobot API.
   description: |
     datarobot is a client library for working with the <https://www.datarobot.com/> platform API.
   doc_url: https://datarobot-public-api-client.readthedocs-hosted.com
