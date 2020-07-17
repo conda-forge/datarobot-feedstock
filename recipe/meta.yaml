@@ -29,6 +29,7 @@ requirements:
     - trafaret <2.0,>=0.7,!=1.1.0
     - urllib3 >=1.23
     - attrs >=19.1.0,<20.0
+    - contextlib2
 
 test:
   imports:
