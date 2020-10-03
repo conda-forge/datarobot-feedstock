@@ -1,5 +1,5 @@
 {% set name = "datarobot" %}
-{% set version = "2.21.5" %}
+{% set version = "2.22.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fda476945a21fa102c79045d97c0c0e3ba9aef6ab3be216cd5241e33981da2fa
+  sha256: 80b6511791297de08ce8cbabed68f8c3bd2b5af4233b69f529e7fe973c3bdc41
 
 build:
   noarch: python
@@ -29,7 +29,11 @@ requirements:
     - trafaret <2.0,>=0.7,!=1.1.0
     - urllib3 >=1.23
     - attrs >=19.1.0,<20.0
-    - contextlib2
+    - contextlib2 >=0.5.5
+    - numpy
+    - python-dateutil
+    - pytz
+    - six
 
 test:
   imports:
