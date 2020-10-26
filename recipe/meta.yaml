@@ -51,10 +51,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - daveblumstein
     - dsakagi
-    - elatt
-    - madmott
-    - nott
-    - peterhurford
-    - mclapper3
+    - alexalokhinrobot
+    - axik
