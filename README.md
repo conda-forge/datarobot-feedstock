@@ -5,9 +5,11 @@ Home: https://www.datarobot.com/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datarobot-feedstock/blob/master/LICENSE.txt)
 
 Summary: This client library is designed to support the DataRobot API.
+
+Documentation: https://datarobot-public-api-client.readthedocs-hosted.com
 
 datarobot is a client library for working with the <https://www.datarobot.com/> platform API.
 
@@ -117,11 +119,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@daveblumstein](https://github.com/daveblumstein/)
+* [@alexalokhinrobot](https://github.com/alexalokhinrobot/)
+* [@axik](https://github.com/axik/)
 * [@dsakagi](https://github.com/dsakagi/)
-* [@elatt](https://github.com/elatt/)
-* [@madmott](https://github.com/madmott/)
-* [@mclapper3](https://github.com/mclapper3/)
-* [@nott](https://github.com/nott/)
-* [@peterhurford](https://github.com/peterhurford/)
 
