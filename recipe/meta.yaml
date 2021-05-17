@@ -1,5 +1,5 @@
 {% set name = "datarobot" %}
-{% set version = "2.23.0" %}
+{% set version = "2.23.1" %}
 
 package:
   name: {{ name|lower }}
@@ -17,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - pytest-runner
   run:
-    - python
+    - python >=3.6
     - pandas >=0.15
     - pyyaml >=3.11
     - requests >=2.21
@@ -54,3 +54,4 @@ extra:
     - dsakagi
     - alexalokhinrobot
     - axik
+    - grw300
