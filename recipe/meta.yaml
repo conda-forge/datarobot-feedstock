@@ -1,5 +1,5 @@
 {% set name = "datarobot" %}
-{% set version = "2.23.0" %}
+{% set version = "2.23.1" %}
 
 package:
   name: {{ name|lower }}
