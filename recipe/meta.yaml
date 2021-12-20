@@ -17,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.6,<3.10
     - pip
     - pytest-runner
   run:
-    - python >=3.6
+    - python >=3.6,<3.10
     - pandas >=0.15
     - pyyaml >=3.11
     - requests >=2.21
