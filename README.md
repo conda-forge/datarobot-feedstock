@@ -153,6 +153,5 @@ Feedstock Maintainers
 * [@alexalokhinrobot](https://github.com/alexalokhinrobot/)
 * [@axik](https://github.com/axik/)
 * [@dsakagi](https://github.com/dsakagi/)
-* [@lperri](https://github.com/lperri/)
 * [@mbromanowsky](https://github.com/mbromanowsky/)
 
