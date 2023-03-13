@@ -1,11 +1,11 @@
-About datarobot
-===============
+About datarobot-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datarobot-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.datarobot.com/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datarobot-feedstock/blob/main/LICENSE.txt)
 
 Summary: This client library is designed to support the DataRobot API.
 
