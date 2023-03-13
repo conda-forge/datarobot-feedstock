@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -41,8 +41,8 @@ test:
 
 about:
   home: https://www.datarobot.com/
-  license: Apache-2.0
-  license_family: Apache
+  license: DataRobot Tool and Utility Agreement
+  license_family: PROPRIETARY
   license_file: LICENSE.txt
   summary: This client library is designed to support the DataRobot API.
   description: |
