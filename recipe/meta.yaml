@@ -1,5 +1,5 @@
 {% set name = "datarobot" %}
-{% set version = "3.1.1" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 121d045171b086a879f992bb32eb0913a26729edfbe8fd9c3740d752c366c1a7
+  sha256: 6dc0242110ad0204aaec2d6e86004e58c17b9e530dc08c7c1016943447e56b00
 
 build:
   noarch: python
@@ -22,7 +22,6 @@ requirements:
     - pytest-runner
   run:
     - python >=3.7
-    - contextlib2 >=0.5.5
     - pandas >=0.15
     - numpy
     - pyyaml >=3.11
@@ -30,7 +29,10 @@ requirements:
     - requests-toolbelt >=0.6
     - trafaret !=1.1.0,<2.2,>=0.7
     - urllib3 >=1.23
-    - typing-extensions ==4.3.0
+    - typing_extensions
+    - python-dateutil
+    - mypy_extensions
+    - pytz
 
 test:
   imports:
@@ -52,5 +54,4 @@ extra:
     - alexalokhinrobot
     - axik
     - mbromanowsky
-    - AndrewSonwat
     - ahjota
