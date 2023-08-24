@@ -149,6 +149,5 @@ Feedstock Maintainers
 =====================
 
 * [@ahjota](https://github.com/ahjota/)
-* [@alexalokhinrobot](https://github.com/alexalokhinrobot/)
 * [@dsakagi](https://github.com/dsakagi/)
 
