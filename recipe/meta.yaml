@@ -1,5 +1,5 @@
 {% set name = "datarobot" %}
-{% set version = "3.5.1" %}
+{% set version = "3.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c0a875c136d38f40a68d18b3c25613008fcb06320d5830eadeb5082a2e11432c
+  sha256: f64d7df117966723b60ee9be9a9f9150660f1bf4a05de565b751041ddd6bf00b
 
 build:
   noarch: python
