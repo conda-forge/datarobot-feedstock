@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datarobot-feeds
 
 Home: https://www.datarobot.com/
 
-Package license: [DataRobot Tool and Utility Agreement](https://www.datarobot.com/legal/)
+Package license: [DataRobot Tool and Utility Agreement](https://www.datarobot.com/wp-content/uploads/2021/07/DataRobot-Tool-and-Utility-Agreement.pdf)
 
 Summary: This client library is designed to support the DataRobot API.
 
@@ -13,8 +13,10 @@ Documentation: https://datarobot-public-api-client.readthedocs-hosted.com
 
 datarobot is a client library for working with the <https://www.datarobot.com/> platform API.
 
+
 Current build status
 ====================
+
 
 <table><tr><td>All platforms:</td>
     <td>
@@ -148,4 +150,4 @@ Feedstock Maintainers
 
 * [@ahjota](https://github.com/ahjota/)
 * [@dsakagi](https://github.com/dsakagi/)
-* [@mbromanowsky](https://github.com/mbromanowsky/)
+
