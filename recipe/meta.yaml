@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -41,9 +41,11 @@ test:
 
 about:
   home: https://www.datarobot.com/
-  license: Apache-2.0
-  license_family: Apache
-  license_file: LICENSE.txt
+  license: DataRobot Tool and Utility Agreement
+  license_family: PROPRIETARY
+  license_url: https://www.datarobot.com/wp-content/uploads/2021/07/DataRobot-Tool-and-Utility-Agreement.pdf
+  license_file:
+    - LICENSE.txt
   summary: This client library is designed to support the DataRobot API.
   description: |
     datarobot is a client library for working with the <https://www.datarobot.com/> platform API.

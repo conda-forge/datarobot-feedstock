@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datarobot-feeds
 
 Home: https://www.datarobot.com/
 
-Package license: Apache-2.0
+Package license: [DataRobot Tool and Utility Agreement](https://www.datarobot.com/wp-content/uploads/2021/07/DataRobot-Tool-and-Utility-Agreement.pdf)
 
 Summary: This client library is designed to support the DataRobot API.
 
