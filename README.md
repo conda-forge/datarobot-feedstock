@@ -13,10 +13,8 @@ Documentation: https://datarobot-public-api-client.readthedocs-hosted.com
 
 datarobot is a client library for working with the <https://www.datarobot.com/> platform API.
 
-
 Current build status
 ====================
-
 
 <table><tr><td>All platforms:</td>
     <td>
@@ -150,4 +148,4 @@ Feedstock Maintainers
 
 * [@ahjota](https://github.com/ahjota/)
 * [@dsakagi](https://github.com/dsakagi/)
-
+* [@mbromanowsky](https://github.com/mbromanowsky/)
