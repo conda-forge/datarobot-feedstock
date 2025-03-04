@@ -45,7 +45,7 @@ about:
   license_family: PROPRIETARY
   license_url: https://www.datarobot.com/wp-content/uploads/2021/07/DataRobot-Tool-and-Utility-Agreement.pdf
   license_file:
-    - TOOL_AND_UTILITY_AGREEMENT.md
+    - LICENSE.txt
   summary: This client library is designed to support the DataRobot API.
   description: |
     datarobot is a client library for working with the <https://www.datarobot.com/> platform API.
