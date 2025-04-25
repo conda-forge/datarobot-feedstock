@@ -148,6 +148,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@ahjota](https://github.com/ahjota/)
+* [@ajalon1](https://github.com/ajalon1/)
 * [@dsakagi](https://github.com/dsakagi/)
 
