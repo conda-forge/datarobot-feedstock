@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -54,4 +54,7 @@ about:
 extra:
   recipe-maintainers:
     - dsakagi
-    - ahjota
+    - asuslov
+    - ajalon1
+    - alevan10
+    - c-h-russell-walker
