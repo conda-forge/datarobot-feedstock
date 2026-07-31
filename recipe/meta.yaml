@@ -12,16 +12,16 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - pytest-runner
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - strenum
     - pandas >=0.15
     - numpy
@@ -36,6 +36,8 @@ requirements:
     - pytz
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - datarobot
 
