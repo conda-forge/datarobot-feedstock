@@ -1,0 +1,67 @@
+schema_version: 1
+
+context:
+  version: 3.19.0
+
+package:
+  name: datarobot
+  version: ${{ version }}
+
+source:
+- url: https://files.pythonhosted.org/packages/source/d/datarobot/datarobot-${{ version }}.tar.gz
+  sha256: 5319c45f525ffaf38283468ecae9437fc6ced7969f7dac647253e729f851738c
+
+build:
+  number: 0
+  script: ${{ PYTHON }} -m pip install .
+  python:
+    entry_points:
+    - dr-dev = _dr_dev_plugin:main
+    - drdev = datarobot.core.dev:cli_main
+  noarch: python
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - strenum
+    - pandas >=0.15
+    - numpy
+    - pyyaml >=3.11
+    - requests >=2.21
+    - requests-toolbelt >=0.6
+    - trafaret !=1.1.0,<2.2,>=0.7
+    - urllib3 >=1.23
+    - typing_extensions
+    - python-dateutil
+    - pytz
+
+tests:
+  - python:
+      imports:
+        - datarobot
+      pip_check: false
+      python_version:
+       - ${{ python_min }}.*
+       - '*'
+
+about:
+  license: LicenseRef-DataRobot-Tool-and-Utility-Agreement
+  license_file:
+    - LICENSE.txt
+  summary: This client library is designed to support the DataRobot API.
+  description: |
+    datarobot is a client library for working with the <https://www.datarobot.com/> platform API.
+  homepage: https://www.datarobot.com/
+  documentation: https://datarobot-public-api-client.readthedocs-hosted.com
+
+extra:
+  recipe-maintainers:
+    - dsakagi
+    - asuslov
+    - ajalon1
+    - alevan10
+    - c-h-russell-walker

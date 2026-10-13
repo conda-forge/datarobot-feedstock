@@ -5,14 +5,13 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datarobot-feeds
 
 Home: https://www.datarobot.com/
 
-Package license: [DataRobot Tool and Utility Agreement](https://www.datarobot.com/wp-content/uploads/2021/07/DataRobot-Tool-and-Utility-Agreement.pdf)
+Package license: LicenseRef-DataRobot-Tool-and-Utility-Agreement
 
 Summary: This client library is designed to support the DataRobot API.
 
-Documentation: https://datarobot-public-api-client.readthedocs-hosted.com
+Documentation: https://datarobot-public-api-client.readthedocs-hosted.com/
 
 datarobot is a client library for working with the <https://www.datarobot.com/> platform API.
-
 
 Current build status
 ====================
@@ -45,31 +44,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `datarobot` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install datarobot
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install datarobot
 ```
 
-It is possible to list all of the versions of `datarobot` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add datarobot
+# for installing globally
+pixi global install datarobot
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `datarobot` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search datarobot --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search datarobot --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search datarobot --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -81,6 +122,8 @@ mamba repoquery whoneeds datarobot --channel conda-forge
 # List dependencies of `datarobot`:
 mamba repoquery depends datarobot --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
