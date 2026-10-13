@@ -48,7 +48,7 @@ tests:
        - '*'
 
 about:
-  license: DataRobot Tool and Utility Agreement
+  license: LicenseRef-DataRobot-Tool-and-Utility-Agreement
   license_file:
     - LICENSE.txt
   summary: This client library is designed to support the DataRobot API.
