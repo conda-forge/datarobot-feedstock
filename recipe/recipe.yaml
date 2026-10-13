@@ -1,27 +1,30 @@
-{% set name = "datarobot" %}
-{% set version = "3.18.0" %}
+schema_version: 1
+
+context:
+  name: datarobot
+  version: "3.18.0"
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
   sha256: 47f289b65211416fba37b384b57a0ec82efdb76546aabda95c1ff7076b41e72c
+  file_name: ${{ name }}-${{ version }}.tar.gz
 
 build:
-  noarch: python
   number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python ${{ python_min }}.*
     - pip
     - pytest-runner
   run:
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
     - strenum
     - pandas >=0.15
     - numpy
@@ -35,23 +38,24 @@ requirements:
     - mypy_extensions
     - pytz
 
-test:
-  requires:
-    - python {{ python_min }}
-  imports:
-    - datarobot
+tests:
+  - python:
+      imports:
+        - datarobot
+      pip_check: false
+      python_version:
+       - ${{ python_min }}.*
+       - '*'
 
 about:
-  home: https://www.datarobot.com/
   license: DataRobot Tool and Utility Agreement
-  license_family: PROPRIETARY
-  license_url: https://www.datarobot.com/wp-content/uploads/2021/07/DataRobot-Tool-and-Utility-Agreement.pdf
   license_file:
     - LICENSE.txt
   summary: This client library is designed to support the DataRobot API.
   description: |
     datarobot is a client library for working with the <https://www.datarobot.com/> platform API.
-  doc_url: https://datarobot-public-api-client.readthedocs-hosted.com
+  homepage: https://www.datarobot.com/
+  documentation: https://datarobot-public-api-client.readthedocs-hosted.com
 
 extra:
   recipe-maintainers:
