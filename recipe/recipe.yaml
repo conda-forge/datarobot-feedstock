@@ -1,28 +1,30 @@
 schema_version: 1
 
 context:
-  name: datarobot
-  version: "3.18.0"
+  version: 3.19.0
 
 package:
-  name: ${{ name|lower }}
+  name: datarobot
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 47f289b65211416fba37b384b57a0ec82efdb76546aabda95c1ff7076b41e72c
-  file_name: ${{ name }}-${{ version }}.tar.gz
+- url: https://files.pythonhosted.org/packages/source/d/datarobot/datarobot-${{ version }}.tar.gz
+  sha256: 5319c45f525ffaf38283468ecae9437fc6ced7969f7dac647253e729f851738c
 
 build:
-  number: 1
+  number: 0
+  script: ${{ PYTHON }} -m pip install .
+  python:
+    entry_points:
+    - dr-dev = _dr_dev_plugin:main
+    - drdev = datarobot.core.dev:cli_main
   noarch: python
-  script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - pytest-runner
+    - setuptools
   run:
     - python >=${{ python_min }}
     - strenum
@@ -35,7 +37,6 @@ requirements:
     - urllib3 >=1.23
     - typing_extensions
     - python-dateutil
-    - mypy_extensions
     - pytz
 
 tests:
